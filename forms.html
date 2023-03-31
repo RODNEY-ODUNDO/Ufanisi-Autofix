@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Spare Parts Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input, select {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+        <label for="brand">Brand:</label>
+        <select id="brand" name="brand">
+          <option value="">--Select--</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Ford">Ford</option>
+          <option value="Chevrolet">Chevrolet</option>
+          <option value="Honda">Honda</option>
+        </select>
+
+        <label for="model">Model:</label>
+        <select id="model" name="model">
+          <option value="">--Select--</option>
+          <option value="Corolla">Corolla</option>
+          <option value="Civic">Civic</option>
+          <option value="F-150">F-150</option>
+          <option value="Silverado">Silverado</option>
+        </select>
+
+        <label for="year">Year:</label>
+        <select id="year" name="year">
+          <option value="">--Select--</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+        </select>
+
+        <label for="spareparts">Type of Spare Parts:</label>
+        <select id="spareparts" name="spareparts">
+          <option value="">--Select--</option>
+          <option value="Engine Parts">Engine Parts</option>
+          <option value="Brake Parts">Brake Parts</option>
+          <option value="Suspension Parts">Suspension Parts</option>
+          <option value="Electrical Parts">Electrical Parts</option>
+        </select>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" >
+
+        <label for="phone">Telephone Number:</label>
+        <input type="number" id="phone">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+
+        <button id="submitButton">Submit</button>
+      
+    </div>
+    
+  </body>
+  <script  src="./forms.js" type="module"></script>
+</html>
