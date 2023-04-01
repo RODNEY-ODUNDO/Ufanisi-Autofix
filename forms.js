@@ -47,5 +47,6 @@ submitButton.addEventListener('click', (event) => {
     });
     
     alert('Order has been placed');
+    window.location.href = "homepage.html";
 });
 

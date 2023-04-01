@@ -105,7 +105,7 @@ submitButton.addEventListener("click", function() {
       const user = userCredential.user;
       console.log("Success! Welcome back!");
       window.alert("Success! Welcome back!");
-      window.location.href = "homepage.html";
+      window.location.href = "forms.html";
       // ...
     })
     .catch((error) => {
