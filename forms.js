@@ -32,6 +32,7 @@ submitButton.addEventListener('click', (event) => {
     var name = document.getElementById('name').value;
     var address = document.getElementById('address').value;
     var telephone = document.getElementById('phone').value;
+    var quantity= document.getElementById('quantity').value;
 
 
     addDoc(collection(db, "orders"),{
@@ -41,7 +42,8 @@ submitButton.addEventListener('click', (event) => {
         Spareparts: spareparts,
         Name: name,
         Address: address,
-        Telephone: telephone
+        Telephone: telephone,
+        Quantity: quantity
 
     });
     
