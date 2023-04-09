@@ -43,10 +43,9 @@ submitButton.addEventListener('click', (event) => {
         Address: address,
         Telephone: telephone
 
-
     });
     
-    alert('Order has been placed');
+    alert('Your Order has been placed. Our team will get in touch with you');
     window.location.href = "index.html";
 });
 

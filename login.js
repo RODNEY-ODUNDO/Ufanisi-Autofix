@@ -82,7 +82,7 @@ createacctbtn.addEventListener("click", function() {
       
       // });
   
-      window.alert("Success! Account created.");
+      window.alert("Success! Account created. Please return to Login");
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -103,8 +103,8 @@ submitButton.addEventListener("click", function() {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      console.log("Success! Welcome back!");
-      window.alert("Success! Welcome back!");
+      console.log("Success! Welcome back! Fill in the form and submit your order!");
+      window.alert("Success! Welcome back! Fill in the form and submit your order!");
       window.location.href = "forms.html";
       // ...
     })
