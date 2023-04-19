@@ -1,18 +1,18 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
 
-import { getFirestore, addDoc,collection} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js";
+import { getFirestore, addDoc,collection} from "https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js";
+
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAWov7boQ9ZniID8kLR7GiWv8Ci9t2-JN0",
-    authDomain: "spareparts-a2d26.firebaseapp.com",
-    projectId: "spareparts-a2d26",
-    storageBucket: "spareparts-a2d26.appspot.com",
-    messagingSenderId: "677086045841",
-    appId: "1:677086045841:web:16fbd4bedc4a9daaaf0130",
-    measurementId: "G-QDELWPR77Z"
-  };
-
+  apiKey: "AIzaSyA_sySowHUsSba-8Go2EUPlc1UWe1FXtKQ",
+  authDomain: "spareparts-system-project.firebaseapp.com",
+  projectId: "spareparts-system-project",
+  storageBucket: "spareparts-system-project.appspot.com",
+  messagingSenderId: "142393836943",
+  appId: "1:142393836943:web:7ea55cd403e35bbb2cb7fa",
+  measurementId: "G-ZBXYQKEPDW"
+};
 
  const app = initializeApp(firebaseConfig);
 
@@ -34,20 +34,22 @@ submitButton.addEventListener('click', (event) => {
     var telephone = document.getElementById('phone').value;
     var quantity= document.getElementById('quantity').value;
 
-
-    addDoc(collection(db, "orders"),{
-        Brand: brand,
-        Model: model,
-        Year: year,
-        Spareparts: spareparts,
-        Name: name,
-        Address: address,
-        Telephone: telephone,
-        Quantity: quantity
-
-    });
     
-    alert('Your Order has been placed. Our team will get in touch with you');
-    window.location.href = "index.html";
+
+  addDoc(collection(db, "orders"),{
+    Brand: brand,
+    Model: model,
+    Year: year,
+    Spareparts: spareparts,
+    Name: name,
+    Address: address,
+    Telephone: telephone,
+    Quantity: quantity
+
 });
+
+    alert('Your Order has been placed. Our team will get in touch with you');
+    // window.location.href = "index.html";
+});
+
 

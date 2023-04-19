@@ -1,29 +1,28 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
 import {
   getDatabase,
   set,
   ref,
   child,
   get,
-} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+} from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js";
 import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged,
-} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
-// import { db } from "./forms.js";
+} from "https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAWov7boQ9ZniID8kLR7GiWv8Ci9t2-JN0",
-    authDomain: "spareparts-a2d26.firebaseapp.com",
-    projectId: "spareparts-a2d26",
-    storageBucket: "spareparts-a2d26.appspot.com",
-    messagingSenderId: "677086045841",
-    appId: "1:677086045841:web:16fbd4bedc4a9daaaf0130",
-    measurementId: "G-QDELWPR77Z"
-  };
+  apiKey: "AIzaSyA_sySowHUsSba-8Go2EUPlc1UWe1FXtKQ",
+  authDomain: "spareparts-system-project.firebaseapp.com",
+  projectId: "spareparts-system-project",
+  storageBucket: "spareparts-system-project.appspot.com",
+  messagingSenderId: "142393836943",
+  appId: "1:142393836943:web:7ea55cd403e35bbb2cb7fa",
+  measurementId: "G-ZBXYQKEPDW"
+};
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
