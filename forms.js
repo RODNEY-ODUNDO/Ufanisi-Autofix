@@ -48,7 +48,7 @@ submitButton.addEventListener('click', (event) => {
 
 });
 
-    alert('Your Order has been placed. Our team will get in touch with you');
+    alert('Your Order has been placed. Please Make Your Payment');
     // window.location.href = "index.html";
 });
 
